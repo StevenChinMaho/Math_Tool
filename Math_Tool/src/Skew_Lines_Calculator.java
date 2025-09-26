@@ -6,7 +6,7 @@ public class Skew_Lines_Calculator {
 	static void print(String s) {
 		System.out.print(s);
 	}
-	static void input(L1 l1, L2 l2) {
+	static void input(Line l1, Line l2) {
 		
 		Scanner in = new Scanner(System.in);
 		
@@ -28,7 +28,7 @@ public class Skew_Lines_Calculator {
 		
 		in.close();
 	}
-	static double[] liner_equation(L1 l1, L2 l2) {
+	static double[] liner_equation(Line l1, Line l2) {
 		
 		double t[] = new double[2];
 		
@@ -53,9 +53,9 @@ public class Skew_Lines_Calculator {
 	
 	public static void main(String[] args) {
 		
-		L1 l1 = new L1();
+		Line l1 = new Line();
 		
-		L2 l2 = new L2();
+		Line l2 = new Line();
 		
 		input(l1, l2);
 		
@@ -70,9 +70,6 @@ public class Skew_Lines_Calculator {
 	}
 
 }
-class L1 {
+class Line {
 	double x, y ,z, a, b, c;
-}
-class L2 {
-	double x, y, z, a, b, c;
 }
